@@ -1,5 +1,5 @@
 import { itens } from '..';
-import styles from './Item.module.scss'
+import styles from './Item.module.scss';
 import classNames from 'classnames';
 
 type Props = typeof itens[0];
@@ -35,5 +35,5 @@ export default function Item(props: Props) {
                 </div>
             </div>
         </div>
-    )
+    );
 }

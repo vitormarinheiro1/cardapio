@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import Item from './Item';
-import styles from './Itens.module.scss'
+import styles from './Itens.module.scss';
 
 export const itens = [
     {
@@ -120,7 +120,7 @@ export const itens = [
             "label": "Combos"
         }
     }
-]
+];
 
 interface Props {
     busca: string;
@@ -134,7 +134,7 @@ export default function Itens(props: Props) {
 
     function testaBusca(title: string) {
         const regex = new RegExp(busca, 'i');
-        return regex.test(title)
+        return regex.test(title);
     }
 
     function testaFiltro(id: number) {
@@ -159,7 +159,7 @@ export default function Itens(props: Props) {
         const novaLista = itens.filter(item => testaBusca(item.title) &&
         testaFiltro(item.category.id));
         setLista(ordenar(novaLista));
-    }, [busca, filtro, ordenador])
+    }, [busca, filtro, ordenador]);
 
     return (
         <div className={styles.itens}>
@@ -170,5 +170,5 @@ export default function Itens(props: Props) {
                 />
             ))}
         </div>
-    )
+    );
 }

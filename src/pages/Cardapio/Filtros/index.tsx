@@ -1,4 +1,4 @@
-import styles from './Filtros.module.scss'
+import styles from './Filtros.module.scss';
 import classNames from "classnames";
 
 type IOpcao = typeof filtros[0];
@@ -25,7 +25,7 @@ const filtros = [
         "label": "Veganos",
         "id": 4
     }
-]
+];
 
 export default function Filtros({ filtro, setFiltro }: Props) {
     function selecionarFiltro(opcao: IOpcao) {
@@ -46,5 +46,5 @@ export default function Filtros({ filtro, setFiltro }: Props) {
                 </button>
             ))}
         </div>
-    )
+    );
 }

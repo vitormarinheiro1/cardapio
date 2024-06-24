@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import styles from './Ordenador.module.scss';
 import classNames from 'classnames';
-import { MdKeyboardArrowUp, MdKeyboardArrowDown } from 'react-icons/md'
+import { MdKeyboardArrowUp, MdKeyboardArrowDown } from 'react-icons/md';
 
 interface Props {
     ordenador: string,
@@ -25,7 +25,7 @@ const opcoes = [
         "nome": "Preço",
         value: "preco"
     },
-]
+];
 
 export default function Ordenador({ ordenador, setOrdenador}: Props) {
     const [aberto, setAberto] = useState(false);
@@ -52,5 +52,5 @@ export default function Ordenador({ ordenador, setOrdenador}: Props) {
                 ))}
             </div>
         </button>
-    )
+    );
 }
