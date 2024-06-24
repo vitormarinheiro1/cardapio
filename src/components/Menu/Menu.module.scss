@@ -1,4 +1,4 @@
-@import "syles/variaveis";
+@import "styles/variaveis";
 @import "styles/breakpoints";
 
 .menu {
@@ -9,7 +9,7 @@
     }
 
     @media (min-width: $desktop_sm) {
-        padding: 20px: $padding-horizontal-sm;
+        padding: 20px $padding-horizontal-sm;
     }
 
     @media (min-width: $desktop_sm) and (mas-width: $desktop_md) {
