@@ -12,7 +12,7 @@ export default function NotFound() {
             [stylesTema.container]: true
         })}>
             <div className={styles.voltar}>
-                <button onClick={() => navigate('/')}>
+                <button onClick={() => navigate(-1)}>
                     {'< Voltar'}
                 </button>
             </div>
