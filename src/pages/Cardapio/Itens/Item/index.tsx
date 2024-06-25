@@ -1,10 +1,10 @@
-import { itens } from '..';
+import { Prato } from 'types/Prato';
 import styles from './Item.module.scss';
 import classNames from 'classnames';
 
-type Props = typeof itens[0];
 
-export default function Item(props: Props) {
+
+export default function Item(props: Prato) {
     const { title, description, category, size, serving, price, photo } = props;
     return (
         <div className={styles.item}>
